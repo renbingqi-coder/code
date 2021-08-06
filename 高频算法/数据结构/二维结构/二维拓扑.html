@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//图
+			function Node(value){
+				this.value = value;
+				this.neighber = [];//存放邻居节点
+			}
+			var node1 = new Node(1);
+			var node2 = new Node(2);
+			var node3 = new Node(3);
+			var node4 = new Node(4);
+			node1.neighber.push(node2);
+			node2.neighber.push(node3);
+			node3.neighber.push(node4);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function Node(value){
+				this.value = value;
+				this.next = null;
+			}
+			var node1 = new Node(1);
+			var node2 = new Node(2);
+			var node3 = new Node(3);
+			var node4 = new Node(4);
+			var node5 = new Node(5);
+			node1.next=node2;
+			node2.next=node3;
+			node3.next=node4;
+			node4.next=node5;
+			// 链表遍历
+			function bian(root){
+				if(root== null){
+					return;
+				}else{	
+					console.log(root);
+					bian(root.next);
+				}
+			}
+			// bian(node1);
+			//链表逆置
+			function niZhi(root){
+				//最后一位
+				if(root.next == null){
+					return root;
+				}else{
+					// 逆置链表
+					var result = niZhi(root.next);
+					// root为倒数第2位 root.next.next = null
+					root.next.next = root;
+					root.next = null;
+					console.log(root)				
+					return result;
+				}
+				
+			}
+			var node = niZhi(node1);
+			bian(node);
+		</script>
+	</body>
+</html>

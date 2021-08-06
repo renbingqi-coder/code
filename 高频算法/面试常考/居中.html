@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 1子项父绝,已知子宽高，left/top 50%  margin -自身高度/2 */
+        /* .wrapper{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .children{
+            position:absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -50px;
+            margin-left:-50px;
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+        } */
+
+        /* 2子项父绝,已知子宽高，left/top 50%-自身高度/2  */
+        /* .wrapper{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .children{
+            position:absolute;
+            left: calc(50% - 50px);
+            top: calc(50% - 50px);
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+        } */
+
+        /* 3子项父绝,不知子宽高，left/top 50%-自身高度/2  */ 
+        /* .wrapper{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .children{
+            position:absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+        } */
+
+        /* 4父级触发bfc防止margin塌陷，子直接margin取一半
+        .wrapper{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .children{
+            margin-top: 50px;
+            margin-left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+        } */
+
+        /* 5子项父绝，子上下左右距离为0  marginauto */
+        /* .wrapper{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .children{
+            top: 0;
+            bottom:0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+        } */
+
+        /* 6子行级元素 */
+        /* .wrapper{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            text-align: center;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .children{
+            margin-top: 50px;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-color: bisque;
+        } */
+
+        /* 7flex */
+        /* .wrapper{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .children{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-color: bisque;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="children"></div>
+    </div>
+</body>
+</html>

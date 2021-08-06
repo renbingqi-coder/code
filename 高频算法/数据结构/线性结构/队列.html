@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function Queue(){
+				this.arr = [];
+				this.push = function(value){
+					this.arr.push(value);
+				}
+				this.pop = function(){
+					return this.arr.shift();
+				}
+			}
+			var queue = new Queue();
+			queue.push(1);
+			queue.push(2);
+			queue.pop();
+			queue.pop();
+		</script>
+	</body>
+</html>
