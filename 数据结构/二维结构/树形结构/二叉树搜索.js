@@ -69,16 +69,14 @@ function Search(rootList, target) {
 const arr = [];
 //广度优先遍历
 function Search(rootList,arr) {
-	rootList = Array.isArray(rootList)?rootList:[...rootList]
 	if (rootList == null || rootList.lenght == 0)
 		return false;
+	console.log(rootList);
 	var childlist = [];
 	for (var i = 0; i < rootList.length; i++) {
-		console.log(rootList[i].value)
 		childlist.push(rootList[i].leftTree)
 		childlist.push(rootList[i].rightTree)
-		arr.push(childlist[0]);
 	}
 	Search(childlist,arr);
 }
-console.log(Search([a]));
+console.log(Search([a]),[])

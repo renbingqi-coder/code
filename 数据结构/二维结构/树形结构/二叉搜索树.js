@@ -1,6 +1,6 @@
 
 var arr = [];
-for (var i = 0; i < 10000; i++) {
+for (var i = 0; i < 10; i++) {
 	arr.push(Math.floor(Math.random() * 10000))
 }
 
@@ -25,6 +25,13 @@ function Node(value) {
 	this.right = null;
 }
 
+
+/**
+ * 
+ * @param {*} root  根节点
+ * @param {*} value  值
+ * @returns 
+ */
 function addNode(root, value) {
 	if (root == null || root.value == value)
 		return;
@@ -40,7 +47,11 @@ function addNode(root, value) {
 			addNode(root.right, value);
 	}
 }
-
+/**
+ * 
+ * @param {*} arr 创建一个二叉树
+ * @returns 
+ */
 function buildSearchTree(arr) {
 	if (arr == null || arr.length == 0)
 		return;
@@ -51,8 +62,18 @@ function buildSearchTree(arr) {
 	return root;
 }
 var root = buildSearchTree(arr);
+
+
+
 var num1 = 0;
 
+
+/**
+ * 
+ * @param {*} root  根节点
+ * @param {*} target  目标节点
+ * @returns 
+ */
 function searchTree(root, target) {
 	num1++;
 	if (root == null)

@@ -35,8 +35,6 @@
         
         //快指针先走k步
         while(k-- > 0){
-            if(fast === null)
-                return null;
             fast = fast.next;
         }
         //慢指针再和快指针一起走   当快指针为空时输出慢指针对应的值
