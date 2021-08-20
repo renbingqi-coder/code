@@ -33,7 +33,6 @@ function Ajax(obj){
 	}else{
 		alert('该浏览器不支持ajax请求')
 	}
-	
 	xhr.onreadystatechange = function(){
 		if(xhr.status === 200 && xhr.readyState ===4){
 			success(JSON.parse(xhr.responseText));
@@ -66,3 +65,8 @@ function Ajax(obj){
 		xhr.send(data);
 	}
 }
+
+const xhr = new XMLHttpRequest();
+xhr.open("get",url,isAsync);
+che.setRequestHeader("Content-Type","application/json");
+xhr.send();

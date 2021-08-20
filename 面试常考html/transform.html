@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100px;
+            width: 10px;
+            background-color: black;
+            padding: 10px 20px;
+        }
+
+        .div-container {
+            height: 100px;
+            width: 10px;
+            background-color: gray;
+            position: relative;
+        }
+
+        .content {
+            width: 10px;
+            height: 1px;
+            position: absolute;
+            background-color: red;
+            transform-origin: center bottom;
+            bottom: 0;
+            left: 0;
+            transform: scaleY(20)
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div-container">
+            <div class="content">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

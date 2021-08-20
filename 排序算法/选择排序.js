@@ -13,6 +13,12 @@ function swap(arr, a, b) {
 	arr[b] = temp;
 }
 //选择排序
+/**
+ * 每次找到最大的值的位置然后将它放到最后 第二大放在倒数第二 以此类推
+ * 时间复杂度 n^2
+ * @param {*} arr 
+ * @returns 
+ */
 function selectSort(arr) {
 	if (arr == null || arr.length == 0)
 		return;
