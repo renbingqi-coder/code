@@ -5,7 +5,6 @@
 // • 全局变量挂载到全局对象（window）：全局对象成员污染问题
 {
     var a = 1;
-
 }
 console.log(a); //输出1
 //promiseall的输出结果 顺序
@@ -37,3 +36,12 @@ function all(proms) {
 //为什么会有类
 //数据响应式
 //虚拟dom的优缺点
+
+
+function a(obj){
+    obj.a = 1;
+
+}
+let obj = {b : 1}
+a(obj)
+console.log(obj);
