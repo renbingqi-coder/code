@@ -1,28 +1,38 @@
 let b = 1
 
-const a = {
-    get value(){
-        return b;
-    } ,
-    set value(c){
-        b = c;
-    }
-}
+// const a = {
+//     get value(){
+//         return b;
+//     } ,
+//     set value(c){
+//         b = c;
+//     }
+// }
+a = {}
+
+
 a.value = 2
-console.log(JSON.stringify(a.value),b);
+
+c = JSON.parse(JSON.stringify(a))
+
 
 function ref(raw){
 
-    const r = {
-        get value(){
-            return raw;
-        } ,
-        set value(c){
-            raw = c;
+    c = JSON.parse(JSON.stringify(raw))
+
+    Object.defineProperty(raw,'value',{
+        get(){
+            return c.value
+        },
+        set(value){
+            console.log(c.value,value)
+            c.value = value;
         }
-    }
-    return r
+    })
 }
 
-const c = ref(b)
-console.log(JSON.stringify(c));
+ref(a)
+
+console.log(a);
+
+

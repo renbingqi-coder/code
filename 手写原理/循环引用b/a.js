@@ -1,6 +1,6 @@
 let counter = 3;
 function incCounter() {
-  counter++;
+  this.counter++;
 }
 module.exports = {
   counter: counter,
