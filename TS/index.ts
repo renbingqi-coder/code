@@ -8,4 +8,5 @@ let my:Person = {
     age:22,
 }
 
-console.log(my);
+my.name
+
