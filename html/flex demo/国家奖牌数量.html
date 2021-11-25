@@ -1,0 +1,130 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-11-08 14:50:04
+ * @LastEditTime: 2021-11-11 10:52:00
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /code/html/flex demo/国家奖牌数量.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .item {
+            padding: 2px 0;
+            display: flex;
+            width: 100%;
+        }
+
+        .item-index {
+            box-sizing: border-box;
+            width: 40px;
+            padding: 0px 10px;
+        }
+
+        .item-content {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .item-title {
+            box-sizing: border-box;
+            width: 100px;
+        }
+
+        .item-content-container {
+            padding: 0px 10px;
+            display: flex;
+            flex: 1 1 auto;
+        }
+
+        .item-content1 {
+            width: 100%;
+        }
+
+        .item-content2 {
+            width: calc((99/123)*100%);
+        }
+
+        .item-content3 {
+            width: calc((58/123)*100%);
+        }
+
+        .item-content-item:nth-of-type(1) {
+            background-color: orange;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .item-content-item:nth-of-type(2) {
+            background-color: gray;
+        }
+
+        .item-content-item:nth-of-type(3) {
+            background-color: sienna;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .item-content-item {
+            flex: 1 1 auto;
+            text-align: center;
+        }
+
+        .item-total {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list-contianer">
+        <i>++ 新增策略plan-test -- 删除策略test</i>
+        <h1>Medal Race</h1>
+        <div class="item">
+            <div class="item-index">1</div>
+            <div class="item-title">CHINA</div>
+            <div class="item-content-container">
+                <div class="item-content item-content1">
+                    <div class="item-content-item" style="width: 42px;">42</div>
+                    <div class="item-content-item" style="width: 42px;">42</div>
+                    <div class="item-content-item" style="width: 39px;">39</div>
+                </div>
+            </div>
+            <div class="item-total">123</div>
+        </div>
+        <div class="item">
+            <div class="item-index">0</div>
+            <div class="item-title">USA</div>
+            <div class="item-content-container">
+                <div class="item-content item-content2">
+                    <div class="item-content-item" style="width: 32px;">32</div>
+                    <div class="item-content-item" style="width: 33px;">33</div>
+                    <div class="item-content-item" style="width: 24px;">24</div>
+                </div>
+            </div>
+
+
+            <div class="item-total">99</div>
+        </div>
+        <div class="item">
+            <div class="item-index">2</div>
+            <div class="item-title">ENGLISH</div>
+            <div class="item-content-container">
+                <div class="item-content item-content3">
+                    <div class="item-content-item" style="width: 5px;">5</div>
+                    <div class="item-content-item" style="width: 22px;">22</div>
+                    <div class="item-content-item" style="width: 21px;">31</div>
+                </div>
+            </div>
+
+            <div class="item-total">58</div>
+        </div>
+    </div>
+</body>
+</html>

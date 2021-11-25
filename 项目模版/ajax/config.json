@@ -1,0 +1,61 @@
+[{
+        "name": "api",
+        "inject": "$http",
+        "showError": true,
+        "showLoading": false,
+        "enabledExtract": true,
+        "enableRandomNumber": false,
+        "universalErrorHandler": false,
+        "timeout": 30000
+    },
+    {
+        "name": "kconf",
+        "inject": "",
+        "showError": true,
+        "showLoading": true,
+        "enabledExtract": true,
+        "structure": {
+            "codeField": "result",
+            "codePass": 1,
+            "msgField": "msg",
+            "bodyField": "data"
+        },
+        "enableRandomNumber": true
+    },
+    {
+        "name": "mini-api",
+        "inject": "$http",
+        "showError": true,
+        "showLoading": false,
+        "enabledExtract": true,
+        "enableRandomNumber": false,
+        "universalErrorHandler": false,
+        "timeout": 30000
+    },
+    {
+        "name": "mock",
+        "baseURL": "/mock",
+        "inject": false,
+        "showError": true,
+        "showLoading": false,
+        "enabledExtract": true,
+        "enableRandomNumber": false,
+        "universalErrorHandler": false,
+        "timeout": 30000
+    },
+    {
+        "name": "deploy-api",
+        "inject": "$http",
+        "showError": true,
+        "showLoading": false,
+        "enabledExtract": true,
+        "enableRandomNumber": false,
+        "structure": {
+            "codeField": "code",
+            "codePass": 0,
+            "msgField": "message",
+            "bodyField": "data"
+        },
+        "timeout": 30000
+    }
+]

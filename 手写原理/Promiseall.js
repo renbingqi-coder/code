@@ -13,12 +13,39 @@ function MyPromiseAll(arr) {
         })
     })
 }
+function all(proms) {
+    return new Promise((resolve, reject) => {
+        const results = proms.map(p => {
+            const obj = {
+                result: undefined,
+                isResolved: false
+            }
+            p.then(data => {
+                obj.result = data;
+                obj.isResolved = true;
+                //判断是否所有的全部完成
+                const unResolved = results.filter(r => !r.isResolved)
+                if (unResolved.length === 0) {
+                    //全部完成
+                    resolve(results.map(r => r.result));
+                }
+            }, reason => {
+                reject(reason);
+            })
+            return obj;
+        })
+    })
+}
 
 
-MyPromiseAll([new Promise((r, j) => {
-    r(1)
+all([new Promise((r, j) => {
+    console.log(1);
+    setTimeout(()=>{
+        r(1)
+    })
 }), new Promise((r, j) => {
-    j(2)
+    console.log(2);
+    r(2)
 })]).then(data => {
     console.log(data);
 }, (result) => {

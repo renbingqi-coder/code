@@ -39,3 +39,18 @@ let a = deepCopy({
 })
 
 console.log(a);
+
+function copyDeep(origin){
+    let target = ''
+    if(typeof origin !== "object"){
+        target = origin
+    }else{
+        target = Array.isArray(origin) ? []:{};
+        for(let i in origin){
+            if(origin.hasOwnProperty(i)){
+                target[i] = copyDeep(origin[i])
+            }
+        }
+    }
+    return target;
+}

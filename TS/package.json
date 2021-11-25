@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "json-to-ts-interface": "^1.0.5",
     "node-fetch": "^3.0.0",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.2"

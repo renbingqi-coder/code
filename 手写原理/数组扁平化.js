@@ -56,3 +56,9 @@ Array.prototype._falt = function (index) {
         return index !== 0 ? Array.isArray(cur) ? [...pre, ...cur._falt(--index)] : [...pre, cur] : [...pre, cur];
     }, [])
 }
+
+Array.prototype._falt1 = function(index){
+    return this.reduce((pre,cur)=>{
+        return index !==0?Array.isArray(cur)?[...pre,...cur._flat1(--index)]:[...pre,cur]:[...pre,cur];
+    },[])
+}

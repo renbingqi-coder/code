@@ -22,6 +22,11 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
+get@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/get/-/get-1.4.0.tgz#5de87b935839d755a17964773cc35e41ee33cd57"
+  integrity sha1-Xeh7k1g511WheWR3PMNeQe4zzVc=
+
 has@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
@@ -74,6 +79,11 @@ rollup@^2.38.5:
   integrity sha512-Au92NuznFklgQCUcV96iXlxUbHuB1vQMaH76DHl5M11TotjOHwqk9CwcrT78+Tnv4FN9uTBxq6p4EJoYkpyekg==
   optionalDependencies:
     fsevents "~2.3.2"
+
+safe@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/safe/-/safe-0.4.7.tgz#97355985a6be13f24b53b44e1ee42ba708c225f0"
+  integrity sha512-zmEbKfM7YmdRtHj95dK8mdLNwwsYMq+JUSLwHDKC7Ikbu4COEhEPTuFPswwIj4g6acr18/uasBTBlU/YTyhKbg==
 
 source-map-js@^0.6.2:
   version "0.6.2"
