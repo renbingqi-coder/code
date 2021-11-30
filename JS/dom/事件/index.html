@@ -1,0 +1,56 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-11-26 11:26:10
+ * @LastEditTime: 2021-11-26 11:36:14
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /code/JS/dom/事件/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>点击</button>
+    <script>
+        const oBtn = document.getElementsByTagName('button')[0];
+        oBtn.onclick = (e)=>{
+            console.log(e);
+            console.log('click');
+        }
+        oBtn.ondblclick = (e)=>{
+            console.log(e);
+            console.log('dblclick');
+        }
+        oBtn.onmousedown = (e)=>{
+            console.log(e);
+            console.log('mousedown');
+        }
+        oBtn.onmouseout = (e)=>{
+            console.log(e);
+            console.log('mouseout');
+        }
+        oBtn.onmouseup = (e)=>{
+            console.log(e);
+            console.log('mouseup');
+        }
+        oBtn.onmouseenter = (e)=>{
+            console.log(e);
+            console.log('mouseenter');
+        }
+        // oBtn.onmousemove = (e)=>{
+        //     console.log(e);
+        //     console.log('mousemove');
+        // }
+        // oBtn.click = ()=>{
+        //     console.log(click);
+        // }
+
+
+    </script>
+</body>
+</html>

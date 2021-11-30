@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-09 11:07:59
- * @LastEditTime: 2021-11-23 20:50:24
+ * @LastEditTime: 2021-11-28 19:21:09
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /code/TS/JSONToTsInterface/index.js
@@ -9,57 +9,34 @@
 
 const interfaceDefinition = require('json-to-ts-interface');
 const res = interfaceDefinition(
-
-    [
-        {
-            "indicator_subdimension_items": [
-                {
-                    "indicator_items": [
-                        {
-                            "id": 8,
-                            "indicator_name": "RX packets"
-                        },
-                        {
-                            "id": 9,
-                            "indicator_name": "RX errors"
-                        },
-                        {
-                            "id": 10,
-                            "indicator_name": "RX overruns"
-                        },
-                        {
-                            "id": 11,
-                            "indicator_name": "RX frame"
-                        },
-                        {
-                            "id": 12,
-                            "indicator_name": "rx_crc_errors_phy"
-                        },
-                        {
-                            "id": 13,
-                            "indicator_name": "TX packets"
-                        },
-                        {
-                            "id": 14,
-                            "indicator_name": "TX bytes"
-                        },
-                        {
-                            "id": 15,
-                            "indicator_name": "TX errors"
-                        },
-                        {
-                            "id": 16,
-                            "indicator_name": "TX carrier"
-                        },
-                        {
-                            "id": 17,
-                            "indicator_name": "TX overruns"
-                        }
-                    ],
-                    "indicator_subdimension": "ifconfig"
-                }]
-        }
-    ],
+    {
+        "items": [
+          {
+            "hostname": "bjfk-rs10687.yz02",
+            "id": 1,
+            "name": "图表1",
+            "resource_path": "https://cdnfile.corp.kuaishou.com/kc/files/a/sysdg/custom_data/c6e7cgi1e3uo4i5ia23g-test.svg"
+          },
+          {
+            "hostname": "bjfk-rs10687.yz02",
+            "id": 2,
+            "name": "图表1",
+            "resource_path": "https://cdnfile.corp.kuaishou.com/kc/files/a/sysdg/custom_data/c6e7ch21e3uo4i5ia240-test.svg"
+          },
+          {
+            "hostname": "bjfk-rs10687.yz02",
+            "id": 3,
+            "name": "图表1",
+            "resource_path": "https://cdnfile.corp.kuaishou.com/kc/files/a/sysdg/custom_data/c6e7chi1e3uo4i5ia24g-test.svg"
+          },
+          {
+            "hostname": "bjfk-rs10687.yz02",
+            "id": 4,
+            "name": "新图表",
+            "resource_path": "https://cdnfile.corp.kuaishou.com/kc/files/a/sysdg/custom_data/c6erclq1e3ut92ofbe50-test.svg"
+          }
+        ]
+      },
     {
     globalExportMode: 2,      // 默认 don't export  1 = don't export 2 =  export 3 = export default
         lineBreak: '\n',          // 换行符
